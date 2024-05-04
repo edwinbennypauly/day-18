@@ -17,12 +17,13 @@ def track():
     screen.clear()
     all_turtles =[]
     all_turtles.clear()
+    n = 6
     for turtles in range(6):
         new_turtle: Turtle = turtle.Turtle()
         new_turtle.shape("turtle")
         new_turtle.penup()
         new_turtle.color(colors[turtles])
-        if turtles == 5:
+        if turtles == n-1:
             new_turtle.goto(x=320,y=260)
             new_turtle.right(90)
             new_turtle.pendown()
